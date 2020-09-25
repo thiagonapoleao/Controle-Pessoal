@@ -45,7 +45,7 @@ $PDO = db_connect();
 
 		<div class="container" style="margin-left: 10px">
 			<form action="index.php" method="get" class="needs-validation" id="formSearch" novalidate>
-				<div align="center" >
+				<div align="center">
 					<div class="form-row">
 						<div class="col-sm-1 mb-1">
 							<img src="img/logo-1.png" alt="" style="margin-left: -35px;">

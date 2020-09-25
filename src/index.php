@@ -47,7 +47,7 @@ $stmt_array->execute();
 				<ul class="navbar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-					</li>				
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="cadastro/cadastro.php">Cadastro</a>
 					</li>

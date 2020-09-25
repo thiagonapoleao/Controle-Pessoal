@@ -4,11 +4,11 @@ require_once 'init.php';
 // abre a conexão
 $PDO = db_connect();
 
-// pega o ID da URL
+// pega o CPF da URL
 $cpf = isset($_GET['cpf']) ? $_GET['cpf'] : null;
 
 
-// busca os dados do usuário a ser editado
+// busca os dados do usuário 
 $sql = "SELECT nome, sexo, datanasc, cpf, rg, endereco, numero, bairro, cidade, estado, cep, telefone, celular, email FROM cadastro WHERE cpf = $cpf";
 $stmt = $PDO->prepare($sql);
 $stmt->bindParam(':id', $id, PDO::PARAM_INT);
@@ -308,15 +308,15 @@ $saldo = $receita - $despesa;
 						</div>
 						<div class="form-row">
 							<div class="col-sm-6 mb-1">
-								<label for="validationServer05">Nome</label>
+								<label for="validationServer01">Nome</label>
 								<input type="text" name="nome" id="nome" value="<?php echo $user['nome']; ?> " class="form-control">
 							</div>
 							<div class="col-sm-2 mb-1">
-								<label for="validationServer04">RG</label>
+								<label for="validationServer02">RG</label>
 								<input type="text" name="rg" id="rg" value="<?php echo $user['rg']; ?> " class="form-control">
 							</div>
 							<div class="col-sm-2 mb-1">
-								<label for="validationServer05">CPF</label>
+								<label for="validationServer03">CPF</label>
 								<input type="text" name="cpf" id="cpf" value="<?php echo $user['cpf']; ?> " class="form-control">
 							</div>
 						</div>

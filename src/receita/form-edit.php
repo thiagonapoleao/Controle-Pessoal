@@ -28,7 +28,6 @@ if (!is_array($idreceita)) {
     exit;
 }
 
-
 // sql_count para contar o total de registros
 $sql_count = "SELECT COUNT(*) AS total FROM receita";
 // conta o toal de registros
